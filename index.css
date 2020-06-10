@@ -1,0 +1,136 @@
+*, body, html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* background-color: rgba(10,10,10, 1); */
+
+  background: #0B0B0B; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3F3F3F, #0B0B0B); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3F3F3F, #0B0B0B);
+}
+body::-webkit-scrollbar { 
+  display: none; 
+  scroll-behavior: smooth
+}
+
+
+.clear{
+  clear: both;
+}
+
+
+#container {
+  margin-top: 80px;
+  margin-bottom: 54px;
+  height: 100%;
+  overflow-y: scroll;
+
+}
+#container #head{
+  text-align: center;
+}
+#container #head h1{
+  font-size: 28px;
+  color: #fcfcfc;
+}
+#container #head .search {
+  width: 90%;
+  /* text-align: center; */
+  margin: auto;
+}
+#container #head .search input {
+  margin-top: 20px;
+  width: 90%;
+  height: 54px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 15px;
+  font-size: 18px;
+  border: 0;
+  float: left;
+  outline:none;
+}
+#container #head .search .icon{
+  margin-top: 20px;
+  width: 10%;
+  height: 54px;
+  z-index: 2;
+  color: #4f5b66;
+  float: right;
+  background: #0B0B0B;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 2px solid #fcfcfc;
+  border-right: 2px solid #fcfcfc;
+  border-bottom: 2px solid #fcfcfc;
+  border-left: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+#container #head .search .icon:hover {
+  cursor: pointer;
+}
+
+#contents {
+  color: #fcfcfc;
+  width: 90%;
+  margin: 30px auto;
+}
+#contents .relation {
+  margin-top: 40px;
+}
+#contents .relation .head h2{
+  font-size: 18;
+}
+#contents .relation ul.cards {
+  text-align: justify;
+  -moz-text-align-last: justify;
+  -webkit-text-align-last: justify;
+  text-align-last: justify;
+  /* margin-top: 20px; */
+}
+#contents .relation ul.cards li.card {
+  list-style-type: none;
+  display: inline-block;
+  width: 45%;
+  background-color: gray; 
+  border-radius: 5px;
+  height: 76px;
+  padding: 5px;
+  margin-top: 15px;
+  opacity: 0.3;
+}
+
+li.card.green {
+  background-color: #9FCC70 !important;
+}
+li.card.blue {
+  background-color: #5F8EA4 !important;
+}
+li.card.red {
+  background-color: #BB6263 !important;
+}
+
+li.card.active {
+  opacity: 1 !important;
+}
+
+#bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 54px;
+  
+}
+
+#bottom button{
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#bottom button:hover {
+  cursor: pointer;
+}
